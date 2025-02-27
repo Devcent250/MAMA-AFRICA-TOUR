@@ -11,8 +11,8 @@ const isLargeScreen = () => {
 
 const HeroSection = () => {
   const images = [
-    "/img/10.jpg", "/img/DSC01236.jpeg", "/img/07.jpg", "/img/DSC01318.jpeg",
-    "/img/26.jpg", "/img/DSC01357.jpeg", "/img/04.jpg", "/img/05.jpg",
+    "/img/05.jpg","/img/DSC01236.jpeg", "/img/07.jpg", "/img/10.jpg", "/img/DSC01318.jpeg",
+    "/img/26.jpg", "/img/DSC01357.jpeg", "/img/04.jpg", 
     "/img/DSC01244.jpeg", "/img/06.jpg", "/img/img01.jpeg", "/img/08.jpg",
     "/img/09.jpg"
   ];
@@ -58,7 +58,7 @@ const HeroSection = () => {
 
   return (
     <motion.div
-      className="relative h-screen bg-cover bg-center md:mt-24 font-coolvetica bg-slate-200"
+      className="relative h-screen bg-cover bg-center md:mt-20 font-coolvetica bg-slate-200 p-4"
       style={{ backgroundImage: `url(${images[currentSlide]})` }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -81,7 +81,7 @@ const HeroSection = () => {
           Explore the wild with us
         </motion.h1>
         <motion.p
-          className="mt-2 lg:mt-4 text-lg lg:text-xl font-Coolvetica"
+          className="mt-16 lg:mt-4 text-lg lg:text-xl font-Coolvetica"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -92,7 +92,7 @@ const HeroSection = () => {
 
         <motion.button
           onClick={handleBookingClick}
-          className="mt-4 lg:mt-8 text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
+          className="mt-4 lg:mt-8 text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse absolute bottom-40"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -107,7 +107,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        <h2 className="text-5xl lg:text-3xl font-bold text-black">
+        <h2 className="text-xl lg:text-3xl font-bold text-black">
           <span className="bg-white text-green-500 py-1 px-12 inline-block rounded-t-lg shadow-md font-coolvetica">
             Our Services
           </span>
