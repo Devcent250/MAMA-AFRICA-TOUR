@@ -15,7 +15,7 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-slate-200 flex justify-center items-center px-6 py-12 mt-32">
+    <div className="min-h-screen w-full bg-slate-200 flex justify-center items-center px-6 py-12 mt-40">
       <motion.div 
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
