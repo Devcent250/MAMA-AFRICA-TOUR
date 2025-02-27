@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './Components/Header';
-import NavBar from './Components/NavBar';
+import Header from './Components/shared/Header';
+import NavBar from './Components/shared/NavBar';
 import Booking from './Components/Booking';
 import HeroSection from './Components/HeroSection';
 import ServicesCard from './Components/ServicesCard';
 import MissionVision from './Components/MissionVision';
-import Footer from './Components/Footer';
+import Footer from './Components/shared/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Import your other page components

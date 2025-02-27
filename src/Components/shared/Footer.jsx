@@ -12,8 +12,6 @@ const Footer = () => {
 
           <img src="/img/logo.png" alt="Mama Africa Logo" className="h-16 mb-4" />
 
-          <img src="img/logo.png" alt="Mama Africa Logo" className="h-16 mb-4" />
-
           <div className="flex space-x-4">
 
             <a href="#" aria-label="Facebook" className="text-white">
@@ -63,8 +61,6 @@ const Footer = () => {
       <div className="mt-8 border-t border-white pt-4 text-center font-coolvetica">
 
         <p className="text-sm font-normal ">Copyrights © 2025 - <span className='text-yellow-300'>Mama Africa Tours,</span> All Rights Reseved.</p>
-
-        <p className="text-sm font-normal">Copyrights © 2025 - <span className='text-white'>Mama Africa Tours,</span> All Rights Reseved.</p>
 
       </div>
     </footer>
