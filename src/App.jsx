@@ -13,7 +13,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './Components/About';
 import Services from './Components/Services';
 import Packages from './Components/Packages';
+import AkageraPark from './Components/AkageraPark';
+import MountainGorilla from './Components/MountainGorilla';
 import Contacts from './Components/Contacts';
+import NyungweForest from './Components/NyungweForest';
+import GiudedBirding from './Components/GiudedBirding';
+import HistoricalSites from './Components/HistoricalSites';
+import GastronomicExperience from './Components/GastronomicExperience';
+
 
 function App() {
   // State to manage selected tour
@@ -87,6 +94,12 @@ function App() {
             path="/packages" 
             element={<Packages packagesData={packagesData} onTourSelect={handleTourSelect} />} 
           />
+           <Route path="/packages/akagera-national-park" element={<AkageraPark />} />
+          <Route path="/packages/mountain-gorilla-expeditions" element={<MountainGorilla />} />
+          <Route path="/packages/nyungwe-forest-adventures" element={<NyungweForest />} />
+          <Route path="/packages/guided-birding-tours" element={<GiudedBirding />} />
+          <Route path="/packages/historical-sites-tour" element={<HistoricalSites />} />
+          <Route path="/packages/gastronomic-experience" element={<GastronomicExperience />} />
           <Route path="/booking" element={<Booking selectedTour={selectedTour} />} />
           <Route path="/contact-us" element={<Contacts />} />
         </Routes>
