@@ -9,7 +9,30 @@ const Footer = () => {
   return (
     <footer className="bg-green-800 text-white py-8 inset-x-0">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 font-coolvetica">
-        
+           {/* Newsletter Section */}
+           <div className="flex flex-col items-center md:items-start w-full">
+          <h3 className="text-lg mb-2 text-center md:text-left">Register for our news updates</h3>
+          <form className="flex flex-col sm:flex-row items-center gap-2 w-full">
+            {/* Email Input */}
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              className="px-4 py-2 rounded-lg text-black bg-white focus:ring-2 focus:ring-yellow-300 outline-none w-full sm:w-3/4"
+            />
+            {/* Submit Button */}
+            <button 
+              className={`px-4 py-2 rounded-lg text-slate-800 transition w-full sm:w-auto ${
+                email ? 'bg-yellow-300 hover:bg-yellow-400' : 'bg-gray-400 cursor-not-allowed'
+              }`}
+              disabled={!email}
+            >
+              Submit
+            </button>
+          </form>
+        </div>
         {/* Logo & Social Media */}
         <div className="flex flex-col items-center md:items-start">
           <img src="/img/logo.png" alt="Mama Africa Logo" className="h-16 mb-4" />
@@ -41,30 +64,7 @@ const Footer = () => {
           <p className="text-sm">info@mamaafrica.com</p>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="flex flex-col items-center md:items-start w-full">
-          <h3 className="text-lg mb-2 text-center md:text-left">Register for our news updates</h3>
-          <form className="flex flex-col sm:flex-row items-center gap-2 w-full">
-            {/* Email Input */}
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="px-4 py-2 rounded-lg text-black bg-white focus:ring-2 focus:ring-yellow-300 outline-none w-full sm:w-3/4"
-            />
-            {/* Submit Button */}
-            <button 
-              className={`px-4 py-2 rounded-lg text-slate-800 transition w-full sm:w-auto ${
-                email ? 'bg-yellow-300 hover:bg-yellow-400' : 'bg-gray-400 cursor-not-allowed'
-              }`}
-              disabled={!email}
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+     
 
       </div>
 
