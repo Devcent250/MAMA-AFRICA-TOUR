@@ -81,7 +81,7 @@ const HeroSection = () => {
           Explore the wild with us
         </motion.h1>
         <motion.p
-          className="mt-16 lg:mt-4 text-lg lg:text-xl font-Coolvetica"
+          className="mt-4 lg:mt-4 text-lg lg:text-xl font-Coolvetica"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -92,7 +92,7 @@ const HeroSection = () => {
 
         <motion.button
           onClick={handleBookingClick}
-          className="mt-4 lg:mt-8 text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse absolute bottom-40"
+          className=" lg:mt-24 text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse absolute bottom-48"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
