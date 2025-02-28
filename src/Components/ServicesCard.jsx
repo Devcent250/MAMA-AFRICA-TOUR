@@ -105,16 +105,20 @@ const ServicesCard = () => {
                 </div>
 
                 {/* Button */}
-                <motion.div className="relative flex justify-center mt-4 pb-4 z-10">
+                <motion.div 
+                  className="absolute bottom-6 flex justify-center w-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 transition-all duration-500 z-10"
+                >
                   <motion.button
                     onClick={() => handleNavigation(service.slug)}
-                    className="bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-700 transition duration-300"
+                    className="text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] 
+                    hover:font-normal font-bold py-3 px-6 rounded-md transition duration-300 transform hover:scale-110 
+                    hover:shadow-lg shadow-[0_0_15px_#D6ED07]"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
                     Read More
                   </motion.button>
-                </motion.div>
+                </motion.div>  {/* <-- Added the closing tag for button section */}
               </motion.div>
             ))}
           </motion.div>
@@ -132,7 +136,7 @@ const ServicesCard = () => {
           Rwanda is a country rich in culture, wildlife, and natural beauty. Our dedicated guides are here to provide you with unforgettable experiences and insights into the heart of Rwanda. Contact us to plan your adventure today!
         </p>
       </motion.div>
-    </motion.div>
+    </motion.div>  
   );
 };
 

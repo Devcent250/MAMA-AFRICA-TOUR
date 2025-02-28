@@ -11,8 +11,8 @@ const isLargeScreen = () => {
 
 const HeroSection = () => {
   const images = [
-    "/img/05.jpg","/img/DSC01236.jpeg", "/img/07.jpg", "/img/10.jpg", "/img/DSC01318.jpeg",
-    "/img/26.jpg", "/img/DSC01357.jpeg", "/img/04.jpg", 
+    "/img/05.jpg", "/img/DSC01236.jpeg", "/img/07.jpg", "/img/10.jpg", "/img/DSC01318.jpeg",
+    "/img/26.jpg", "/img/DSC01357.jpeg", "/img/04.jpg",
     "/img/DSC01244.jpeg", "/img/06.jpg", "/img/img01.jpeg", "/img/08.jpg",
     "/img/09.jpg"
   ];
@@ -100,8 +100,8 @@ const HeroSection = () => {
         </motion.button>
       </div>
 
-      <motion.div 
-        id="services" 
+      <motion.div
+        id="services"
         className="absolute bottom-[-16px] w-full py-4 text-center"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

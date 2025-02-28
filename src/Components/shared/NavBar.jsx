@@ -25,11 +25,11 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-30 transition-all duration-500 ${isScrolled ? 'bg-green-500 py-2 shadow-lg' : 'bg-green-500 py-0'}`}>
+    <header className={`fixed top-0 left-0 w-full z-30 mt-2 transition-all duration-500 ${isScrolled ? 'bg-green-500 py-2 shadow-lg' : 'bg-green-500 py-0'}`}>
       <nav className="container mx-auto flex items-center justify-between px-6 py-2 relative">
         
       
-        <div className=" mt-20 lg:mt-8">
+        <div className=" mt-20 lg:mt-10">
           <img
             src="/img/logo.png"
             alt="Mama Africa Logo"
