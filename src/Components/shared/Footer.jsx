@@ -69,7 +69,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Text */}
-      <div className="mt-8 border-t border-white pt-4 text-center">
+      <div className="mt-8 border-t border-white pt-4 text-center font-coolvetica">
         <p className="text-sm font-normal">
           Copyrights © 2025 - <span className="text-yellow-300">Mama Africa Tours,</span> All Rights Reserved.
         </p>
