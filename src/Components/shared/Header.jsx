@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 const Header = () => {
   return (
     <div className="fixed top-0 left-0 w-full bg-white text-green-500 py-3 z-50 font-coolvetica">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 font-semibold">
         <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm">
           <span className="flex items-center">
             <FaPhone className="mr-2" /> +250 788 784 023 906
