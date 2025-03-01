@@ -48,7 +48,7 @@ const HistoricalSites = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl font-bold mb-4">Genocide Memorial Visits</h2>
+            <h2 className="lg:text-4xl text-xl font-bold mb-4">Genocide Memorial Visits</h2>
             <p className="text-gray-700 text-lg mb-8">
               Explore Rwanda’s tragic past and resilient present through guided tours of Genocide Memorial sites.
               Gain deep insights into the country’s history, the impact of the genocide, and Rwanda’s journey toward unity and reconciliation.
@@ -70,7 +70,7 @@ const HistoricalSites = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl font-bold mb-4">Local History Tours</h2>
+            <h2 className="lg:text-4xl text-xl font-bold mb-4">Local History Tours</h2>
             <p className="text-gray-700 text-lg mb-8">
               Discover Rwanda’s rich heritage by visiting historical sites and engaging in storytelling sessions with local guides.
               Learn about the traditions, culture, and significant events that shaped Rwanda’s past and present.

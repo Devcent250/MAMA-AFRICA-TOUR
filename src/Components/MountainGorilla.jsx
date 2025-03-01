@@ -57,7 +57,7 @@ const MountainGorilla = () => {
           </motion.div>
 
           <motion.div className="p-8" variants={slideUp}>
-            <h1 className="text-4xl font-bold mb-4">Mountain Gorilla Trekking</h1>
+            <h1 className="lg:text-4xl text-xl font-bold mb-4">Mountain Gorilla Trekking</h1>
             <p className="text-gray-700 text-lg mb-8">
               Mountain gorilla trekking is one of the most thrilling wildlife experiences, offering a chance to observe these majestic primates in their natural habitat.
               Found in the dense forests of Rwanda, Uganda, and the Democratic Republic of Congo, mountain gorillas live in family groups and display fascinating behaviors.

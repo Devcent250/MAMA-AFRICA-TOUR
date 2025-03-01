@@ -45,7 +45,7 @@ const GastronomicExperience = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-4xl font-bold mb-4">Community and Eco-Tours</h1>
+            <h1 className="lg:text-4xl text-xl font-bold mb-4">Community and Eco-Tours</h1>
             <p className="text-gray-700 text-lg mb-8">
               Experience the rich and diverse flavors of Rwandan cuisine, featuring a blend of traditional ingredients
               and modern culinary techniques. From the famous brochettes to fresh organic produce, every dish tells a story.
@@ -61,7 +61,7 @@ const GastronomicExperience = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-3xl font-bold mb-4">Farm-to-Table Freshness</h2>
+            <h2 className="lg:text-4xl text-xl font-bold mb-4">Farm-to-Table Freshness</h2>
             <p className="text-gray-700 text-lg mb-8">
               Our gastronomic experience highlights farm-to-table meals, featuring locally sourced ingredients
               prepared by skilled chefs. Enjoy freshly harvested vegetables, organic meats, and exotic spices

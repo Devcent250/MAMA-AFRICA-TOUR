@@ -40,7 +40,7 @@ const NyungweForest = () => {
 
           <div className="p-8">
             <motion.h1
-              className="text-4xl font-bold mb-4"
+              className="lg:text-4xl text-xl font-bold mb-4"
               initial={{ x: -200 }}
               animate={{ x: 0 }}
               transition={{ duration: 1 }}

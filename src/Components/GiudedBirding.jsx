@@ -46,7 +46,7 @@ const GuidedBirds = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-4xl font-bold mb-4">Guided Bird Watching Tour</h1>
+            <h1 className="lg:text-4xl text-xl font-bold mb-4">Guided Bird Watching Tour</h1>
             <p className="text-gray-700 text-lg mb-8">
               Discover the beauty of birds in their natural habitat with our expert-guided bird watching tour. Explore diverse ecosystems and witness rare and stunning species of birds from the comfort of our guided tour. Whether you're an experienced birdwatcher or a beginner, this tour offers something for everyone.
             </p>
