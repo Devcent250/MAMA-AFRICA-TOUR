@@ -25,22 +25,22 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-30 mt-2 transition-all duration-500 ${isScrolled ? 'bg-green-500 py-2 shadow-lg' : 'bg-green-500 py-0'}`}>
-      <nav className="container mx-auto flex items-center justify-between px-6 py-2 relative">
+    <header className={`fixed top-0 left-0 w-full z-30 -mt-4 transition-all duration-500 ${isScrolled ? ' bg-green-500 py-1 shadow-lg' : 'bg-green-500 py-0'}`}>
+      <nav className="container mx-auto flex items-center justify-between px-6 py-1 relative">
         
       
-        <div className=" mt-20 lg:mt-10">
+        <div className=" mt-16 lg:mt-10">
           <img
             src="/img/logo.png"
             alt="Mama Africa Logo"
-            className="h-20 w-auto  transition duration-300 hover:scale-105"
+            className="h-16 lg:h-18 w-auto  transition duration-300 hover:scale-105"
           />
         </div>
 
         <div className="md:hidden ml-auto">
           <button onClick={toggleMenu} className="text-slate-800 focus:outline-none">
             {isOpen ? (
-              <svg className="w-12 h-12 transform transition duration-300 mt-16 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"> 
+              <svg className="w-10 h-10 transform transition duration-300 mt-16 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"> 
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             ) : (

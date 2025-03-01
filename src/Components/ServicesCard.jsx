@@ -69,6 +69,13 @@ const ServicesCard = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+
+      <h2 className="text-xl lg:text-xl font-bold text-black text-center mb-6">
+        <span className=" bg-white text-green-500 py-1 px-12 lg:mb-12 rounded-t-lg shadow-md font-coolvetica">
+          Our Services
+        </span>
+      </h2>
+
       <section id="services">
         <div className="container mx-auto px-4 md:px-8">
           <motion.div
@@ -84,28 +91,28 @@ const ServicesCard = () => {
                 transition={{ duration: 0.3 }}
                 className="relative bg-white shadow-lg w-full h-full rounded-lg overflow-hidden group"
               >
-                {/* Image Section */}
+
                 <div className="relative w-full h-72 overflow-hidden">
                   <motion.img
                     src={service.img}
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-90 transition-opacity duration-300"></div>
                 </div>
 
-                {/* Text & Button Section */}
+
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-6 transition-all duration-500">
-                  <h3 className="text-lg font-bold mb-2">{service.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
                   <motion.p
-                    className="text-sm text-center opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-500"
+                    className="text-sm text-center opacity-0 group-hover:opacity-100 font-normal transform group-hover:translate-y-0 translate-y-4 transition-all duration-500"
                   >
                     {service.description}
                   </motion.p>
                 </div>
 
-                {/* Button */}
-                <motion.div 
+
+                <motion.div
                   className="absolute bottom-6 flex justify-center w-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 transition-all duration-500 z-10"
                 >
                   <motion.button
@@ -118,25 +125,25 @@ const ServicesCard = () => {
                   >
                     Read More
                   </motion.button>
-                </motion.div>  {/* <-- Added the closing tag for button section */}
+                </motion.div>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* Bottom Information Section */}
+
       <motion.div
         className="flex justify-center items-center mt-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <p className="border border-black rounded-md py-4 px-6 w-3/4 text-center max-w-4xl bg-white">
+        <p className="border border-black rounded-md py-4 px-6 w-full text-center max-w-4xl bg-white">
           Rwanda is a country rich in culture, wildlife, and natural beauty. Our dedicated guides are here to provide you with unforgettable experiences and insights into the heart of Rwanda. Contact us to plan your adventure today!
         </p>
       </motion.div>
-    </motion.div>  
+    </motion.div>
   );
 };
 

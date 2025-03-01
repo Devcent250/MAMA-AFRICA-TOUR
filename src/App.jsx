@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './Components/shared/Header';
-import NavBar from './Components/shared/NavBar';
+ import NavBar from './Components/shared/NavBar';
 import Booking from './Components/Booking';
 import HeroSection from './Components/HeroSection';
 import ServicesCard from './Components/ServicesCard';
 import MissionVision from './Components/MissionVision';
 import Footer from './Components/shared/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-// Import your other page components
 import About from './Components/About';
 import Services from './Components/Services';
 import Packages from './Components/Packages';
@@ -20,13 +17,14 @@ import NyungweForest from './Components/NyungweForest';
 import GiudedBirding from './Components/GiudedBirding';
 import HistoricalSites from './Components/HistoricalSites';
 import GastronomicExperience from './Components/GastronomicExperience';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 
 function App() {
-  // State to manage selected tour
+  
   const [selectedTour, setSelectedTour] = useState(null);
 
-  // Sample packages data with 6 packages
   const packagesData = [
     {
       id: 1,
@@ -66,9 +64,9 @@ function App() {
     },
   ];
 
-  // Function to handle the selection of a tour
+
   const handleTourSelect = (tourName) => {
-    setSelectedTour(tourName); // Set the selected tour
+    setSelectedTour(tourName);
     console.log(`Tour selected: ${tourName}`);
   };
 
@@ -84,7 +82,7 @@ function App() {
               <>
                 <HeroSection />
                 <ServicesCard />
-                <MissionVision />
+               <MissionVision /> 
               </>
             }
           />
