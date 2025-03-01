@@ -70,7 +70,9 @@ const MountainGorilla = () => {
               The conservation efforts to protect mountain gorillas have been highly successful, making this a once-in-a-lifetime eco-tourism experience.
               Seeing them up close, watching their interactions, and understanding their importance to biodiversity is an unforgettable adventure.
             </p>
+            
           </motion.div>
+          
         </div>
 
 
@@ -83,7 +85,17 @@ const MountainGorilla = () => {
               A permit is required for trekking, and a limited number of visitors are allowed each day to minimize impact on the gorillas and their environment.
               Booking in advance is essential due to high demand.
             </p>
-            <motion.button
+           
+            <motion.div className="relative" variants={scaleUp}>
+            <motion.img
+              src="/img/gorilla.jpg"
+              alt="Mountain Gorilla"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
+              variants={fadeIn}
+            />
+          </motion.div>
+        
+          <motion.button
               onClick={handleBookNow}
               className="mt-4 lg:mt-8 text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
               whileHover={{ scale: 1.1 }}
@@ -91,15 +103,6 @@ const MountainGorilla = () => {
             >
               BOOK NOW
             </motion.button>
-          </motion.div>
-
-          <motion.div className="relative" variants={scaleUp}>
-            <motion.img
-              src="/img/gorilla.jpg"
-              alt="Mountain Gorilla"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
-              variants={fadeIn}
-            />
           </motion.div>
         </div>
       </div>
