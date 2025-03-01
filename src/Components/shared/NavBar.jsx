@@ -29,7 +29,7 @@ const NavBar = () => {
       <nav className="container mx-auto flex items-center justify-between px-6 py-1 relative">
         
       
-        <div className=" mt-16 lg:mt-10">
+        <div className=" mt-12 lg:mt-10">
           <img
             src="/img/logo.png"
             alt="Mama Africa Logo"
