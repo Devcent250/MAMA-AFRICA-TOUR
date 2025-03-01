@@ -10,7 +10,7 @@ const GastronomicExperience = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 font-coolvetica mt-28">
+    <div className="container mx-auto px-4 py-8 font-coolvetica mt-12">
 
       <motion.div
         className="bg-cover bg-center h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px]"
@@ -19,7 +19,7 @@ const GastronomicExperience = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-5xl text-white bg-opacity-50 p-4 rounded-lg font-bold">
+        <h1 className="text-2xl lg:text-5xl text-white bg-opacity-50 p-4 rounded-lg font-bold">
           Community and Eco-Tours
         </h1>
       </motion.div>

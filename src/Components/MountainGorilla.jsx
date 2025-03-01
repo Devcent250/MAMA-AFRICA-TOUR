@@ -26,7 +26,7 @@ const MountainGorilla = () => {
 
   return (
     <motion.div
-      className="container mx-auto px-4 py-8 font-coolvetica mt-28"
+      className="container mx-auto px-4 py-8 font-coolvetica mt-12"
       initial="hidden"
       animate="visible"
       variants={fadeIn}
@@ -38,7 +38,7 @@ const MountainGorilla = () => {
         variants={fadeIn}
       >
         <motion.h1
-          className="text-5xl text-white bg-opacity-50 p-4 rounded-lg font-bold"
+          className="text-2xl lg:text-5xl text-white bg-opacity-50 p-4 rounded-lg font-bold"
           variants={slideUp}
         >
           Mountain Gorilla Trekking

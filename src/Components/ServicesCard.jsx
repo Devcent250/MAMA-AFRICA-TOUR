@@ -118,7 +118,7 @@ const ServicesCard = () => {
                   <motion.button
                     onClick={() => handleNavigation(service.slug)}
                     className="text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] 
-                    hover:font-normal font-bold py-3 px-6 rounded-md transition duration-300 transform hover:scale-110 
+                    hover:font-normal font-bold py-1 lg:py-3 px-6 rounded-md transition duration-300 transform hover:scale-110 
                     hover:shadow-lg shadow-[0_0_15px_#D6ED07]"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

@@ -10,7 +10,7 @@ const HistoricalSites = () => {
   };
   
   return (
-    <div className="container mx-auto px-4 py-8 font-coolvetica mt-28">
+    <div className="container mx-auto px-4 py-8 font-coolvetica mt-12">
       
   
       <motion.div
@@ -20,7 +20,7 @@ const HistoricalSites = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-5xl text-white bg-opacity-50 p-4 rounded-lg font-bold">
+        <h1 className="text-2xl lg:text-5xl text-white bg-opacity-50 p-4 rounded-lg font-bold">
           Historical and Educational Tours in Rwanda
         </h1>
       </motion.div>
