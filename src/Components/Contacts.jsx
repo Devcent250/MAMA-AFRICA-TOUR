@@ -4,7 +4,7 @@ import ContactImage from "./img/contact-us.jpg";
 import { motion } from "framer-motion"
 function Contacts() {
   return (
-    <div className="text-black mt-32 flex flex-col items-center w-full px-4 font-coolvetica bg-slate-200 py-12">
+    <div className="text-black mt-24 flex flex-col items-center w-full px-4 font-coolvetica bg-slate-200 py-12">
        <motion.div 
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
