@@ -62,10 +62,10 @@ const Services = () => {
   return (
     <div className="container mx-auto px-4 py-12 font-Coolvetica bg-slate-200">
       <div
-        className="bg-cover bg-center h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px]"
+        className="bg-cover bg-center h-[230px] lg:h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px]"
         style={{ backgroundImage: `url('/img/DSC01135.jpeg')` }}
       >
-        <h1 className="text-5xl text-white px-6 py-2 font-bold rounded-lg shadow-lg">
+        <h1 className="lg:text-5xl text-3xl text-white px-6 py-2 font-bold">
           Our Services
         </h1>
       </div>
