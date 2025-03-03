@@ -55,9 +55,16 @@ const NavBar = () => {
         <ul className="hidden md:flex justify-center items-center space-x-6 text-white mt-10 font-coolvetica tracking-wide mx-auto">
           {['', 'Who We Are', 'Services', 'Packages', 'Contact Us'].map((item, index) => (
             <li key={index}>
-              <Link to={`/${item.toLowerCase().replace(/ /g, '-')}`} className="relative px-2 py-1 transition duration-300 hover:text-yellow-500 hover:underline">
-                {item === '' ? 'Home' : item}
-              </Link>
+             <Link 
+  to={`/${item.toLowerCase().replace(/ /g, '-')}`} 
+  className="relative px-2 py-1 transition duration-300 hover:text-yellow-300
+  after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] 
+  after:bg-yellow-300 after:transition-all after:duration-300 after:ease-in-out 
+  hover:after:w-full hover:after:left-0"
+>
+  {item === '' ? 'Home' : item}
+</Link>
+
             </li>
           ))}
         </ul>

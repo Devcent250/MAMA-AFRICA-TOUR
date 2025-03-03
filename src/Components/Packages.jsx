@@ -23,7 +23,7 @@ const Packages = memo(({ packagesData, onTourSelect }) => {
           className="bg-cover bg-center h-[230px] lg:h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px] bg-slate-200"
           style={{ backgroundImage: `url('/img/DSC01342.jpeg')` }}
         >
-          <h1 className="text-3xl lg:text-5xl text-white px-6 py-2 font-bold text-center">
+          <h1 className="text-3xl lg:text-4xl text-white px-6 py-2 font-bold text-center">
             Our Packages
           </h1>
         </div>

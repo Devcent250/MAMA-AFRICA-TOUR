@@ -65,7 +65,7 @@ const Services = () => {
         className="bg-cover bg-center h-[230px] lg:h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px]"
         style={{ backgroundImage: `url('/img/DSC01135.jpeg')` }}
       >
-        <h1 className="lg:text-5xl text-3xl text-white px-6 py-2 font-bold">
+        <h1 className="lg:text-4xl text-3xl text-white px-6 py-2 font-bold">
           Our Services
         </h1>
       </div>
